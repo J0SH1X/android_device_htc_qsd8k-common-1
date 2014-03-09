@@ -75,11 +75,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.hwc.fakevsync=1 \
-    debug.composition.type=hw \
+    debug.composition.type=mdp \
+    debug.gr.numframebuffers=2 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
-    ro.zygote.disable_gl_preload=true \
-    debug.gr.numframebuffers=2
+    view.scroll_friction=0 \
+    ro.zygote.disable_gl_preload=true
 
 #
 # Low Mem
@@ -110,7 +111,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=64m \
     dalvik.vm.heapsize=64m \
-    dalvik.vm.execution-mode=int:jit
+    dalvik.vm.execution-mode=int:jit \
+    dalvik.vm.lockprof.threshold=500 \
+    dalvik.vm.dexopt-flags=m=y \
+    ro.sys.fw.bg_apps_limit=12 \
+    dalvik.vm.checkjni=false
 
 # Default heap settings for 512mb device
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
