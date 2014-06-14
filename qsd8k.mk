@@ -108,7 +108,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.purgeable_assets=1
 #
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mot.eri.losalert.delay=1000 \
-    pm.sleep_mode=0 \
+    pm.sleep_mode=1 \
     ro.ril.power_collapse=1
     
 #
