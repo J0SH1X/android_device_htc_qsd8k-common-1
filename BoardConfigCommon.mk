@@ -113,4 +113,4 @@ TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
 BUILD_KERNEL := true
 
 # Override kernel toolchain. (4.6 is too unstable)
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/arm-eabi-4.8.3/bin/arm-cortex_a8-linux-gnueabi-
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/sm-arm-eabi-4.10/bin/arm-eabi-
