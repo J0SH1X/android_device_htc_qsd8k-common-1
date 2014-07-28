@@ -181,9 +181,9 @@ static void qsd8k_power_hint(struct power_module *module, power_hint_t hint,
     int len;
     int duration = 1;
 
-    switch (hint) {
+   switch (hint) {
     case POWER_HINT_INTERACTION:
-    case POWER_HINT_CPU_BOOST:
+//    case POWER_HINT_CPU_BOOST:
         if (boostpulse_open(qsd8k) >= 0) {
             if (data != NULL)
                 duration = (int) data;
