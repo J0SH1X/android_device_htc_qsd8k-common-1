@@ -62,9 +62,10 @@ TARGET_NO_HW_VSYNC := true
 TARGET_USES_ION := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
-BUILD_KERNEL := true
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
+#TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
+#BUILD_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(ANDROID_BUILD_TOP)/kernel/htc/qsd8k/prebuilt/zImage
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 TARGET_RAMDISK_COMPRESSION := xz --check=crc32 --arm --lzma2=dict=1MiB
 
 # Fix slow boot
