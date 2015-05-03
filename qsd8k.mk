@@ -82,7 +82,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.gr.numframebuffers=2 \
     debug.performance.tuning=1 \
     persist.sys.ui.hw=1 \
-    persist.webview.provider=classic \
     video.accelerate.hw=1 \
     view.scroll_friction=0 \
     ro.zygote.disable_gl_preload=true
@@ -113,10 +112,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     hwui.use_gpu_pixel_buffers=true \
     hwui.render_dirty_regions=false \
     hwui.use.blacklist=true
-
-# WEBVIEW / is only for 2.x kernel and this fix blackscreen in google apps
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.webview.provider=classic
 
 # DISABLE ERROR CHECKING
 PRODUCT_PROPERTY_OVERRIDES += \
