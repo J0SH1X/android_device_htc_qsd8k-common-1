@@ -108,13 +108,10 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 BOARD_USE_OLD_AVC_ENCODER := true
 BOARD_NO_BFRAMES := true
 
-# Kernel directory
+# Kernel
 TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
 BUILD_KERNEL := true
-
-# Override kernel toolchain. (4.6 is too unstable)
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)//prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9/bin/arm-eabi-
-#KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/sm-arm-eabi-4.10/bin/arm-eabi-
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-
 
 # TWRP
 DEVICE_RESOLUTION := 480x800
@@ -124,3 +121,4 @@ TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_SUPERSU := true
+
