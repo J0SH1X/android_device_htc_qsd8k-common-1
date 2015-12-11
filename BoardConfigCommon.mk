@@ -107,10 +107,3 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 # Camcorder
 BOARD_USE_OLD_AVC_ENCODER := true
 BOARD_NO_BFRAMES := true
-
-# Kernel directory
-TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
-BUILD_KERNEL := true
-
-# Override kernel toolchain. (4.6 is too unstable)
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9
