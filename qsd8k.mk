@@ -136,9 +136,8 @@ PRODUCT_PROPERTY_OVERRIDES += config.disable_atlas=true
 
 # App limits    
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.fw.bg_apps_limit=12 \
-    sys.mem.max_hidden_apps=6 \
-    ro.config.max_starting_bg=3
+    ro.sys.fw.bg_apps_limit=16 \
+    ro.config.max_starting_bg=8
 
 # Default heap settings for 512mb device
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
