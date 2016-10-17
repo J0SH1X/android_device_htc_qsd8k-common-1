@@ -240,6 +240,11 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
+# Bluetooth/Wifi firmware
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/firmware/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
+    $(COMMON_PATH)/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
+
 #
 # Qcom
 #
