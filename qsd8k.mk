@@ -166,7 +166,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1 \
     ro.ril.power_collapse=1 \
     power.saving.mode=1 \
-    ro.vold.primary_physical=1
+    ro.vold.primary_physical=1 \
+    persist.graphics.vulkan.disable=true
     
 #
 # Telephony/ring Tweaks
