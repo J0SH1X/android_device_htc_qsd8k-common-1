@@ -18,8 +18,6 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 
-DEVICE_PACKAGE_OVERLAYS += device/htc/qsd8k-common/overlay
-
 TARGET_NO_BOOTLOADER := true
 
 USE_CLANG_PLATFORM_BUILD := true
@@ -81,7 +79,6 @@ HWUI_COMPILE_FOR_PERF := true
 TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
 BUILD_KERNEL := true
 TARGET_RAMDISK_COMPRESSION := xz --check=crc32 --arm --lzma2=dict=1MiB
-#KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 
 # Fix slow boot
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
