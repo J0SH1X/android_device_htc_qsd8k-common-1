@@ -165,7 +165,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.mot.eri.losalert.delay=1000 \
     pm.sleep_mode=1 \
     ro.ril.power_collapse=1 \
-    power.saving.mod=1
+    power.saving.mode=1 \
+    ro.vold.primary_physical=1
     
 #
 # Telephony/ring Tweaks
