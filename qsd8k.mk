@@ -271,5 +271,11 @@ PRODUCT_COPY_FILES += \
     device/htc/qsd8k-common/media_codecs.xml:system/etc/media_codecs.xml \
     device/htc/qsd8k-common/audio_policy.conf:system/etc/audio_policy.conf
 
+# Media codecs
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+
 # Proprietary blobs
 $(call inherit-product-if-exists, vendor/htc/qsd8k-common/qsd8k-vendor.mk)
