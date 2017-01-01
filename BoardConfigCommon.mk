@@ -22,6 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/qsd8k-common/overlay
 
 TARGET_NO_BOOTLOADER := true
 
+USE_CLANG_PLATFORM_BUILD := true
+
 # Arch
 TARGET_BOARD_PLATFORM := qsd8k
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
