@@ -13,5 +13,13 @@
 # limitations under the License.
 
 ifeq (qsd8k,$(TARGET_BOARD_PLATFORM))
+
+LOCAL_PATH:= $(call my-dir)
+subdir_makefiles := \
+    $(LOCAL_PATH)/custom_libraries/camera/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/libshims/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/libstlport/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/power/Android.mk
+
 include $(call all-subdir-makefiles)
 endif
