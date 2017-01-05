@@ -21,9 +21,11 @@ PRODUCT_LOCALES := en
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+COMMON_PATH := device/htc/qsd8k-common
+
 # Misc
 PRODUCT_COPY_FILES += \
-    device/htc/qsd8k-common/init.power.rc:root/init.power.rc
+    $(COMMON_PATH)/init.power.rc:root/init.power.rc
 
 #
 # Required Packages
@@ -251,7 +253,7 @@ PRODUCT_COPY_FILES += \
 
 # Init post-boot script
 PRODUCT_COPY_FILES += \
-    device/htc/qsd8k-common/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
+    $(COMMON_PATH)/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
 
 #
 # Permissions
@@ -274,8 +276,8 @@ PRODUCT_COPY_FILES += \
 
 # Media configuration
 PRODUCT_COPY_FILES += \
-    device/htc/qsd8k-common/media_codecs.xml:system/etc/media_codecs.xml \
-    device/htc/qsd8k-common/audio_policy.conf:system/etc/audio_policy.conf
+    $(COMMON_PATH)/media_codecs.xml:system/etc/media_codecs.xml \
+    $(COMMON_PATH)/audio_policy.conf:system/etc/audio_policy.conf
 
 # Media codecs
 PRODUCT_COPY_FILES += \
